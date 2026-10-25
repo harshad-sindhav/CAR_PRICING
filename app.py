@@ -209,8 +209,7 @@ if st.button("🔮 Predict Car Price", type="primary", use_container_width=True)
             value=f"₹ {prediction:.2f} Lakh"
         )
 
-        st.info(f"Approximately ₹ {prediction * 100:.2f} Crore equivalent is NOT used here; "
-                f"the model output is directly in Lakh as in the notebook.")
+        st.info("The predicted car price is displayed in Lakhs (₹).")
 
     except Exception as e:
         st.error(f"Prediction me error aaya: {e}")
